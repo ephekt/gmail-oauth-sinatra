@@ -10,8 +10,8 @@ enable :sessions
 before do
   session[:oauth] ||= {}  
   
-  consumer_key = ENV["CONSUMER_KEY"] || ENV["consumer_key"]
-  consumer_secret = ENV["CONSUMER_SECRET"] || ENV["consumer_secret"]
+  consumer_key = ENV["CONSUMER_KEY"] || ENV["consumer_key"] || "anonymous"
+  consumer_secret = ENV["CONSUMER_SECRET"] || ENV["consumer_secret"] || "anonymous"
   
   @consumer ||= OAuth::Consumer.new(consumer_key, consumer_secret,
     :site => "https://www.google.com",

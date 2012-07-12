@@ -1,3 +1,7 @@
+## Fork Update
+
+It is worth noting that as of April, 2012 Google as Deprecated the OAuth version 1 API. It is still in "deprecation support" but you should move on to OAuth 2.
+
 ## Fork notes:
 
 I updated the "twitter-oauth-sinatra" app to make it work with Google Mail and Google Apps Mail.
